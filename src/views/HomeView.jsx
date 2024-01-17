@@ -1,13 +1,13 @@
 import React from 'react'
-import Skip from '../component/Skip'
-import Header from '../component/Header'
-import Main from '../component/Main'
-import Intro from '../component/Intro'
-import Skill from '../component/Skill'
-import Site from '../component/Site'
-import Port from '../component/Port'
-import Contact from '../component/Contact'
-import Footer from '../component/Footer'
+import Skip from '../components/Skip'
+import Header from '../components/Header'
+import Main from '../components/Main'
+import Intro from '../components/Intro'
+import Skill from '../components/Skill'
+import Footer from '../components/Footer'
+import Site from '../components/Site'
+import Port from '../components/Port'
+import Contact from '../components/Contact'
 
 const HomeView = () => {
   return (
@@ -22,6 +22,7 @@ const HomeView = () => {
         <Contact />
       </Main>
       <Footer />
+
     </>
   )
 }
