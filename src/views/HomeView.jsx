@@ -4,10 +4,10 @@ import Header from '../components/Header'
 import Main from '../components/Main'
 import Intro from '../components/Intro'
 import Skill from '../components/Skill'
-import Footer from '../components/Footer'
 import Site from '../components/Site'
 import Port from '../components/Port'
 import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 
 const HomeView = () => {
   return (
@@ -15,14 +15,13 @@ const HomeView = () => {
       <Skip />
       <Header />
       <Main>
-        <Intro />
-        <Skill />
-        <Site />
-        <Port />
-        <Contact />
+        <Intro/>
+        <Skill/>
+        <Site/>
+        <Port/>
+        <Contact/>
       </Main>
-      <Footer />
-
+      <Footer/>
     </>
   )
 }

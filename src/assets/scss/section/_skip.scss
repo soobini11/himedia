@@ -6,8 +6,9 @@
     font-size: 1rem;
     padding: 10px 30px;
     color: var(--white);
-    background-color: var(--black);
+    background: var(--black);
 }
-#skip a:focus, #skip a.active{
+#skip a:focus,
+#skip a:active{
     top: 10px;
 }

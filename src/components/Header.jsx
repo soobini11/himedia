@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-const headerNav = [
+
+const headerNav=[
   {
     title:"intro",
     url:"#intro",
@@ -13,7 +14,7 @@ const headerNav = [
     url:"#site",
   },
   {
-    title:"port",
+    title:"portofolio",
     url:"#port",
   },
   {
@@ -22,32 +23,37 @@ const headerNav = [
   },
 ]
 
+
 const Header = () => {
 
-
-  const [show,setShow] = useState(false)
+  const [show,setShow] = useState(false);
   const toggleMenu=()=>{
-    setShow(pShow => !pShow);
+    setShow((prevShow)=>!prevShow)
   }
 
+
   return (
-    <header id="header">
+    <header id='header'>
       <div className="header_inner">
         <div className="header_logo">
-          <a href="/">portfolio <em>soobin kim</em></a>
+          <a href="/">portofolio <em>react</em></a>
         </div>
-        <div className={`header_nav ${show ? "show":""}`} role="navigation" aria-label="메인메뉴">
+        <nav className={`header_nav ${show? "show":""}`} aria-label='메인메뉴'>
           <ul>
-            {
-              headerNav.map(((nav,key)=>(
-                <li key ={key}><a href={nav.url}>{nav.title}</a></li>
-              )))
-            
-            }
-            
+            {headerNav.map((nav,key)=>(
+              <li key={key}>
+                <a href={nav.url}>{nav.title}</a>
+              </li>
+            ))}
           </ul>
-        </div>
-        <div className="header_nav_mobile" id="headerToggle" aria-controls="primary-menu" aria-expanded={show? "true":"false"} role="button" tabIndex="0" onClick={toggleMenu}>
+        </nav>
+        <div className="header_nav_mobile"
+          id='headerToggle'
+          aria-controls='primary-menu'
+          aria-expanded={show?"true":"false"}
+          role='button'
+          tabIndex='0'
+          onClick={toggleMenu}>
           <span></span>
         </div>
       </div>
